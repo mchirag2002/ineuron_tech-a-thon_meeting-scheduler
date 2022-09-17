@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -20,13 +21,13 @@
             <a class="navbar-brand" href="#intro"> <img src="images/logo-2.png" alt="" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-center mx-auto flex-sm-column">
                     <li class="nav-item active" style="color: white;">
-                        <img src="/images/home.png" alt="" class="nav-icon">
-                        <a class="nav-link" href="#intro">Dashboard </a>
+                        <!-- <img src="/images/home.png" alt="" class="nav-icon"> -->
+                        <a class="nav-link" href="#Dashboard">Dashboard </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#my-introduction">Schedule</a>
@@ -35,7 +36,7 @@
                         <a class="nav-link" href="#contact">Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Logout</a>
+                        <a class="nav-link" href="login.html">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -43,21 +44,39 @@
         </nav>
     </div>
     <div class="header" style="margin-left:10%;">
-        <div class="welcome">
-            <h1 style="margin-bottom:5px;">Hello,</h1>
-            <p style="font-size:60px;">Mr. Anand Singh Gahlout</p>
+        <div style="display:flex;">
+            <div class="welcome">
+                <h1 style="margin-bottom:5px;">Hello,</h1>
+                <div style="display:flex; align-items: center;">
+                    <p style="font-size:60px;">Mr. Anand Singh Gahlout</p>
+                </div>
+                <div class="page-break">
+                    <hr>
+                </div>
+            </div>
+            <div style="margin-left:20%; margin-top:2%;">
+                <div class="clock">
+                    <div class="date">
+                        <p id="date"></p>
+                        <div>
+                            <p id="day">hi</p>
+                            <p id="month">hi</p>
+                        </div>
+
+                    </div>
+                    <p id="clock">00:00:00PMkkkkk</p>
+                    <script src="clock2.js"></script>
+                </div>
+            </div>
         </div>
-        <div class="page-break">
-            <hr>
-        </div>
+
     </div>
     <div class="schedule">
         <!-- <p class="day-looks">This is what your day looks like...</p> -->
         <div class="day">
             <div class=" p-2 text-white bg-opacity-50" id="meetings">
                 Start time: 14:00 | With : Chirag Mathur
-                | 45mins |
-                End at: 14:45
+                | 45mins | End at: 14:45
             </div>
             <div class=" p-2 text-white bg-opacity-80" id="meetings">Meeting time | meeting with | duration |
                 end time
