@@ -40,6 +40,7 @@
     </div>
     <div class="base">
         <h1>Who would you like to schedule a meeting with?</h1>
+        <form action=""></form>
         <div class="select">
             <label for="admin-select">Choose an admin:</label>
 

@@ -12,6 +12,9 @@
 </head>
 
 <body>
+	<style>
+		<?php include 'login.css'?>
+		</style>
     <div class="base">
 
         <div class="login">
@@ -22,6 +25,9 @@
                 <P id="log">Log into your account</P>
             </div>
             <div class="b">
+                <?php if (isset($_GET['error'])) { ?>
+                    <p class="error"><?php echo $_GET['error']; ?></p>
+                <?php } ?>
                 <div class="field">
                     <label for="email">Username: </label>
                     <input type="email" name="email" id="email" placeholder="Email / Username">

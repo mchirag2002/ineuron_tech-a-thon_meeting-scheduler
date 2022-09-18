@@ -18,6 +18,41 @@ body {
 }
 
 .base {
-    margin-left: 17%;
+    margin-left: 22%;
+    margin-top: 3%;
+    color: white;
+}
+.select{
+    background-color: rgb(54, 54, 54);
+    width: 90%;
+    margin-top: 2em;
+    padding: 10px;
+    border-radius: 10px;
+}
+label
+{
+    margin:5px;
+}
+button{
+    margin: 5px;
+    margin-left: 10%;
+}
+.btn {
+    background-color: #9548ae;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #833a9b;
+    color: white;
+}
+
+.btn-check {
+    background-color: #9548ae;
+    color: white;
+}
+
+.btn-check:hover {
+    background-color: #833a9b;
     color: white;
 }
